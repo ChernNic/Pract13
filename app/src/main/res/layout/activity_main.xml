@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:id="@+id/TimeEditText"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Время" />
+
+        <ImageButton
+            android:id="@+id/TimeButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/TimeEditText"
+            android:backgroundTint="#00FFAA00"
+            android:src="@drawable/ic_clock" />
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:id="@+id/DateEditText"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="Дата"
+            android:layout_below="@id/TimeEditText"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/DateButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#00FFAA00"
+            android:layout_toEndOf="@+id/DateEditText"
+            android:layout_below="@id/TimeEditText"
+            android:src="@drawable/ic_calendar" />
+
+        <Button
+            android:id="@+id/ConfirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:layout_below="@id/DateEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
